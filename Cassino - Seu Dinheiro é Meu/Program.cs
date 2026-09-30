@@ -9,10 +9,21 @@ namespace Cassino___Seu_Dinheiro_é_Meu
 {
     internal class Program
     {
+        static string NomeUsuario;
+
+        static void MenuNome()
+        {
+            Console.WriteLine("========================================");
+            Console.WriteLine("       CASSINO SEU DINHEIRO É MEU!      ");
+            Console.WriteLine("========================================");
+            Console.Write("Qual seu nome? ");
+            NomeUsuario = Console.ReadLine();
+        }
+
         static void Raspadinha(int OpMenu_main)
         {
             bool repetir = true;    
-            while(repetir = true) {
+            while(repetir == true) {
                 switch (OpMenu_main)
                 {
                     case 2:
@@ -217,11 +228,9 @@ namespace Cassino___Seu_Dinheiro_é_Meu
                 Console.WriteLine("========================================");
                 Console.WriteLine("       CASSINO SEU DINHEIRO É MEU!      ");
                 Console.WriteLine("========================================");
-                Console.Write("Qual seu nome? ");
-                string NomeUsario = Console.ReadLine();
                 Console.Clear();
                 Cabecalho();
-                Console.WriteLine($"Bem vindo {NomeUsario}!");
+                Console.WriteLine($"Bem vindo {NomeUsuario}!");
                 Console.WriteLine("Escolha uma das opções: ");
                 Console.WriteLine("1 - Loteria");
                 Console.WriteLine("2 - Raspadinhas");
@@ -255,11 +264,8 @@ namespace Cassino___Seu_Dinheiro_é_Meu
         }
             static void Main(string[] args)
             {
-         
-
-            
+                MenuNome();
                 Menu();
-            
             }
         }
     }
