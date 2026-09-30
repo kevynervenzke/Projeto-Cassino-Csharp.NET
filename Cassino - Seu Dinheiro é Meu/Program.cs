@@ -256,7 +256,7 @@ namespace Cassino___Seu_Dinheiro_é_Meu
                     }
                     Random random = new Random();
                     int Premio = random.Next(1000, 10000);
-                    Console.WriteLine($"Bilhete Premiado: {Premio}");
+                   // Console.WriteLine($"Bilhete Premiado: {Premio}");
                     Console.WriteLine("Qual o Número quer Jogar na Loteria? (1000-9999) ");
                     Console.Write("Digite seu valor: ");
                     int ValorJogador = int.Parse(Console.ReadLine());
@@ -267,35 +267,35 @@ namespace Cassino___Seu_Dinheiro_é_Meu
                     }
                     if (ValorJogador == Premio && ValorJogador >= 1000)
                     {
+                        Saldo += 1000;
                         Console.WriteLine("========================================");
-                        Console.WriteLine("Parabéns Você Ganhou o 1º Prêmio!");
+                        Console.WriteLine($"Parabéns Você Ganhou o 1º Prêmio! +1000R$");
                         Console.WriteLine("========================================");
                         Console.WriteLine("Aperte qualquer tecla para voltar para o Menu");
                         Console.ReadKey();
                         Console.Clear();
-                        Saldo += 1000;
                         Menu();
                     }
                     else if (ValorJogador % 1000 == Premio % 1000 && ValorJogador >= 1000)
                     {
+                        Saldo += 500;
                         Console.WriteLine("========================================");
-                        Console.WriteLine("Parabéns Você Ganhou o 2º Prêmio!");
+                        Console.WriteLine($"Parabéns Você Ganhou o 2º Prêmio! +500R$");
                         Console.WriteLine("========================================");
                         Console.WriteLine("Aperte qualquer tecla para voltar para o Menu");
                         Console.ReadKey();
                         Console.Clear();
-                        Saldo += 500;
                         Menu();
                     }
                     else if (ValorJogador % 100 == Premio % 100 && ValorJogador >= 1000)
                     {
+                        Saldo += 100;
                         Console.WriteLine("========================================");
-                        Console.WriteLine("Parabéns Você Ganhou o 3º Prêmio!");
+                        Console.WriteLine($"Parabéns Você Ganhou o 3º Prêmio! +100R$");
                         Console.WriteLine("========================================");
                         Console.WriteLine("Aperte qualquer tecla para voltar para o Menu");
                         Console.ReadKey();
                         Console.Clear();
-                        Saldo += 100;
                         Menu();
                     }
                     else
@@ -341,11 +341,11 @@ namespace Cassino___Seu_Dinheiro_é_Meu
                 Console.WriteLine("========================================");
                 Console.Clear();
                 Cabecalho();
-                Console.WriteLine($"Bem vindo {NomeUsuario}!             Saldo: {Saldo}R$");
+                Console.WriteLine($"Bem vindo {NomeUsuario}!         Saldo: {Saldo}R$");
                 Console.WriteLine("========================================");
                 Console.WriteLine("Escolha uma das opções: ");
-                Console.WriteLine("1 - Loteria");
-                Console.WriteLine("2 - Raspadinhas");
+                Console.WriteLine("1 - Loteria (5 R$)");
+                Console.WriteLine("2 - Raspadinhas (2 R$)");
                 Console.WriteLine("3 - Saques/Depósitos");
                 Console.WriteLine("0 - Sair");
                 Console.WriteLine("========================================");
