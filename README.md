@@ -6,6 +6,9 @@
 ## Funcionalidades
 O menu principal tem 3 opções jogar na loteria, jogar na raspadinha (tem dois tipos), e ele tem a liberdade de sacar ou depositar a quantia que quiser
 
+## O que exercitei nesse Projeto
+Uso de Métodos com retorno, if/else, estruturas de repetições, switch entre outras lógicas.
+
 ## Observações
 Foi um projeto muito difícil de fazer até porque não peguei ele pronto e ficou bem bagunçado, ainda estou aprendendo os princípios SOLID, mas ele funciona perfeitamente.
 Mas vou gravar meu progresso e espero que o próximo projeto eu aprenda a lição de fazer uma funcionalidade pra cada coisa kkk.
